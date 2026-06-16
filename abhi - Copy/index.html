@@ -1,0 +1,313 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AbhiRaj Electronics</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background-image:url('home-appliance-with-ribbons-discounts_252025-696.avif');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    text-align:center;
+}
+
+/* Header */
+header{
+    background:rgba(0,0,0,0.85);
+    color:white;
+    padding:25px;
+}
+
+header h1{
+    margin:0;
+    color:#ff4444;
+    font-size:40px;
+}
+
+header p{
+    color:white;
+    font-size:18px;
+}
+
+/* Navigation */
+nav{
+    background:black;
+    padding:15px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Sections */
+section{
+    background:rgba(255,255,255,0.9);
+    margin:20px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+h2{
+    color:blue;
+}
+
+/* Product Cards */
+.product-card{
+    display:inline-block;
+    width:250px;
+    margin:15px;
+    padding:15px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+.product-card img{
+    width:200px;
+    height:200px;
+    border-radius:15px;
+    box-shadow:0 0 10px black;
+}
+
+.product-card h3{
+    margin:10px 0;
+}
+
+.product-card p{
+    color:darkred;
+    font-weight:bold;
+}
+
+button{
+    background:green;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:darkgreen;
+}
+
+/* Table */
+table{
+    margin:auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+th,td{
+    border:1px solid black;
+    padding:10px;
+}
+
+th{
+    background:blue;
+    color:white;
+}
+
+/* Form */
+form{
+    width:90%;
+    max-width:400px;
+    margin:20px auto;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px gray;
+}
+
+label{
+    color:red;
+    font-weight:bold;
+}
+
+input{
+    width:90%;
+    padding:10px;
+    margin:5px 0;
+}
+
+.buttons input{
+    width:auto;
+    background:blue;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.buttons input:hover{
+    background:red;
+}
+
+/* Footer */
+footer{
+    background:black;
+    color:white;
+    padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>⚡ AbhiRaj Electronics ⚡</h1>
+    <p>Mobile • Laptop • AC • Fridge • Computer Available</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+
+
+<section id="products">
+    <h2>Our Products</h2>
+
+    <div class="product-card">
+        <img src="fridge.webp" alt="Fridge">
+        <h3>Fridge</h3>
+        <p>Price: 25000</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+        <img src="Accc.jpg" alt="AC">
+        <h3>Air Conditioner</h3>
+        <p>Price: 45000</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+        <img src="Washinggg.jpg" alt="Washing Machine">
+        <h3>Washing Machine</h3>
+        <p>Price: 20000</p>
+        <button>Buy Now</button>
+    </div>
+
+    <div class="product-card">
+        <img src="laptop.jpg" alt="Laptop">
+        <h3>Laptop</h3>
+        <p>Price: ₹1,45,000</p>
+        <button>Buy Now</button>
+    </div>
+    
+
+
+
+<section>
+    <h2>Electronics Information</h2>
+
+    <table>
+        <tr>
+            <th>Electronics</th>
+            <th>Uses</th>
+            <th>Benefit</th>
+        </tr>
+
+        <tr>
+            <td>AC</td>
+            <td>Cooling</td>
+            <td>Comfort</td>
+        </tr>
+
+        <tr>
+            <td>Fridge</td>
+            <td>Food Storage</td>
+            <td>Fresh Food</td>
+        </tr>
+
+        <tr>
+            <td>Computer</td>
+            <td>Work & Study</td>
+            <td>Easy Life</td>
+        </tr>
+    </table>
+</section>
+
+<form>
+    <h2 style="color:green;">Customer Form</h2>
+
+    <label>Name</label><br>
+    <input type="text" placeholder="Enter your name"><br><br>
+
+    <label>Password</label><br>
+    <input type="password" placeholder="Enter password"><br><br>
+
+    <label>Email</label><br>
+    <input type="email" placeholder="Enter email"><br><br>
+
+    <label>Mobile Number</label><br>
+    <input type="tel" placeholder="Enter Mobile Number"><br><br>
+
+    <label>Gender</label><br>
+
+    <input type="radio" name="gender"> Male
+    <input type="radio" name="gender"> Female
+
+    <br><br>
+
+    <label>Hobbies</label><br>
+
+    <input type="checkbox"> Reading
+    <input type="checkbox"> Music
+    <input type="checkbox"> Sports
+
+    <br><br>
+
+    <div class="buttons">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+    <section id="about">
+    <h2>About Us</h2>
+    <p>
+        Welcome to AbhiRaj Electronics.<br>
+        Yahan Mobile, Laptop, AC, Fridge aur anya Electronics Products
+        uchit daam par uplabdh hain.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Mobile: 9599831909</p>
+    <p>📧 Email: abhielectronics@gmail.com</p>
+</section>section>
+</form>
+
+<footer>
+    <p>© 2026 AbhiRaj Electronics | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+```
